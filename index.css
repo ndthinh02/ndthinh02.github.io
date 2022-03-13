@@ -1,0 +1,127 @@
+.social-icons a {
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  position: relative;
+  padding: 10;
+}
+body {
+  background-image: url("img.jpeg");
+  background-size: cover;
+}
+* {
+  margin: 0 auto;
+}
+.icon-color {
+  color: aliceblue;
+}
+.info {
+  text-align: center;
+  
+}
+.center {
+  margin-top: 150px;
+  width: 500px;
+  background-color: transparent;
+}
+.about {
+  font-size: 30;
+  font-weight: bold;
+}
+.social-icons .fa-brands {
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  line-height: 40px;
+}
+
+.social-icons .icon {
+  cursor: pointer;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.social-icons {
+  display: inline-flex;
+  margin-top: 40px;
+}
+
+.social-icons .icon a {
+  position: relative;
+  z-index: 2;
+  height: 60px;
+  width: 60px;
+  display: block;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.social-icons .icon a i {
+  line-height: 60px;
+  font-size: 45px;
+  margin-left: -10px;
+}
+.social-icons .icon .title {
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  top: 0px;
+  position: absolute;
+  background: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.social-icons .icon .title:before {
+  margin-left: 36px;
+  position: absolute;
+  background: #fff;
+  content: "";
+  height: 15px;
+  width: 15px;
+  bottom: -6px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.social-icons .icon:hover .title {
+  top: -60px;
+  opacity: 1;
+  pointer-events: auto;
+}
+.social-icons .iccon:hover a i{
+  color: aqua;
+
+}
+.social-icons .icon:hover .title {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+}
+.social-icons .facebook:hover a,
+.social-icons .facebook:hover .title,
+.social-icons .facebook:hover .title::before{
+  background: #3B5999;
+}
+.social-icons .github:hover a,
+.social-icons .github:hover .title,
+.social-icons .github:hover .title::before{
+  background: #171515;
+}
+.social-icons .instagram:hover a,
+.social-icons .instagram:hover .title,
+.social-icons .instagram:hover .title::before{
+  background: #8a3ab9;
+}
+.social-icons .icon:hover a i {
+  color: #fff;
+}
+
