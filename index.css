@@ -10,26 +10,40 @@ body {
   background-image: url("img.jpeg");
   background-size: cover;
 }
-* {
-  margin: 0 auto;
-}
 .container {
-  width: 1500px;
-  height: auto;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-color {
   color: aliceblue;
 }
-.info {
-  text-align: center;
-  
+@media (min-width: 1300px) {
+  .center {
+    width: 30%;
+    height: auto;
+    color: white;
+    padding: 16px;
+    box-shadow: 0px 0px 5px #444444;
+    border-radius: 8px;
+    text-align: center;
+  }
 }
-.center {
-  height: 100%;
-  margin-top: 100px;
-  width: 500px;
-  background-color: transparent;
+@media (max-width: 1300px) {
+  .center {
+    margin-top: 100px;
+    background-color: transparent;
+    width: 70%;
+    height: auto;
+    color: white;
+    padding: 16px;
+    box-shadow: 0px 0px 5px #444444;
+    border-radius: 8px;
+    text-align: center;
+  }
 }
+
 .about {
   font-size: 30;
   font-weight: bold;
@@ -50,8 +64,7 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 2;
-  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
-
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .social-icons {
   display: inline-flex;
@@ -76,7 +89,7 @@ body {
 }
 .social-icons .icon .title {
   color: #fff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   top: 0px;
   position: absolute;
   background: #fff;
@@ -86,8 +99,7 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
-  transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
-
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .social-icons .icon .title:before {
   margin-left: 36px;
@@ -104,34 +116,32 @@ body {
   opacity: 1;
   pointer-events: auto;
 }
-.social-icons .iccon:hover a i{
+.social-icons .iccon:hover a i {
   color: aqua;
-
 }
 .social-icons .icon:hover .title {
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
 }
 .social-icons .facebook:hover a,
 .social-icons .facebook:hover .title,
-.social-icons .facebook:hover .title::before{
-  background: #3B5999;
+.social-icons .facebook:hover .title::before {
+  background: #3b5999;
 }
 .social-icons .github:hover a,
 .social-icons .github:hover .title,
-.social-icons .github:hover .title::before{
+.social-icons .github:hover .title::before {
   background: #171515;
 }
 .social-icons .instagram:hover a,
 .social-icons .instagram:hover .title,
-.social-icons .instagram:hover .title::before{
+.social-icons .instagram:hover .title::before {
   background: #8a3ab9;
 }
 .social-icons .icon:hover a i {
   color: #fff;
 }
-.hr{
-  width: 100px;
+.hr {
+  width: 200px;
   background-color: white;
   height: 1px;
 }
-
