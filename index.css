@@ -19,7 +19,7 @@ body {
 .icon-color {
   color: aliceblue;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   .center {
     width: 30%;
     height: auto;
@@ -30,7 +30,7 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
   .center {
     margin-top: 100px;
     background-color: transparent;
