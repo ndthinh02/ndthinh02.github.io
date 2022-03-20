@@ -12,6 +12,7 @@ body {
   width: 100%;
 }
 .person-img {
+  border-radius:50px;
   height: auto;
   width: 300px;
 }
